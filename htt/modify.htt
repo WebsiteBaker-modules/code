@@ -1,0 +1,22 @@
+<!-- BEGIN main_block -->
+{REGISTER_EDIT_AREA}
+<form action="{WB_URL}/modules/{ADDON_NAME}/save.php" method="post">
+    <input type="hidden" name="page_id" value="{PAGE_ID}" />
+    <input type="hidden" name="section_id" value="{SECTION_ID}" />
+    {FTAN}
+<textarea cols="2"  id="content{SECTION}" name="content" style="width: 100%; height: 20.225em">{CONTENT}</textarea>
+
+<table style="width: 100%;">
+<tr>
+    <td>
+        <input type="submit" value="{TEXT_SAVE}" style="min-width: 100px; margin-top: 5px;" />
+        <input name="pagetree" type="submit" value="{TEXT_SAVE} &amp; {TEXT_BACK}" style="min-width: 100px; margin-top: 5px;" />
+    </td>
+    <td style="float: right;">
+        <input type="button" value="{TEXT_CANCEL}" onclick="window.location = 'index.php';" style="width: 100px; margin-top: 5px;" />
+    </td>
+</tr>
+</table>
+</form>
+<p>&nbsp;</p>
+<!-- END main_block -->
